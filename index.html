@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#0b2133" />
+<title>Hood Boss Technician Team Lead Path</title>
+<style>
+:root{
+  --bg:#07111c;--ink:#f5f9fc;--muted:#9ab1c0;--panel:#10283a;--panel2:#0c1d2b;--line:#27556e;
+  --hb:#63b9e9;--cyan:#60efff;--green:#00ff87;--pink:#ff0080;--yellow:#ffcc00;--red:#ff5b68;
+  --radius:24px;--shadow:0 25px 70px rgba(0,0,0,.32)
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:
+  radial-gradient(circle at 8% 0%,rgba(96,239,255,.15),transparent 28%),
+  radial-gradient(circle at 100% 18%,rgba(0,255,135,.10),transparent 30%),
+  radial-gradient(circle at 50% 110%,rgba(255,0,128,.10),transparent 35%),var(--bg);color:var(--ink)}
+button,input,textarea{font:inherit}.wrap{max-width:1180px;margin:auto;padding:18px}.top{position:sticky;top:0;z-index:50;background:rgba(7,17,28,.86);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;max-width:1180px;margin:auto;padding:12px 18px}.brand{display:flex;gap:12px;align-items:center}.mark{width:46px;height:46px;border:2px solid var(--hb);border-radius:16px;display:grid;place-items:center;background:#0d2233;box-shadow:0 0 30px rgba(99,185,233,.2)}.mark span{font-weight:1000;color:var(--cyan)}
+h1,h2,h3,p{margin-top:0}.brand b{display:block}.brand small{color:var(--muted)}.navlinks{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}.navlinks a,.btn{border:1px solid var(--line);color:var(--ink);background:#0d2030;border-radius:999px;padding:9px 12px;text-decoration:none;font-weight:800;font-size:.86rem}.btn{cursor:pointer}.navlinks a:hover,.btn:hover{border-color:var(--cyan);transform:translateY(-1px)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:22px;align-items:center;padding:56px 0 34px}.kicker{letter-spacing:.18em;text-transform:uppercase;color:var(--cyan);font-weight:1000;font-size:.75rem}.hero h1{font-size:clamp(2.4rem,7vw,5.4rem);line-height:.94;margin:.35rem 0;background:linear-gradient(90deg,#fff,#60efff,#00ff87);-webkit-background-clip:text;color:transparent}.lead{color:#c5d7e2;line-height:1.6;font-size:1.08rem}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.primary{background:linear-gradient(135deg,#145b7c,#0a334a);border-color:#3d91bd}.green{background:linear-gradient(135deg,#0b6b43,#093725);border-color:#18a76a}.stage{min-height:360px;border:1px solid var(--line);border-radius:32px;background:linear-gradient(180deg,rgba(16,40,58,.92),rgba(8,23,35,.95));box-shadow:var(--shadow);position:relative;overflow:hidden;padding:24px}.stage:before{content:"";position:absolute;inset:-60px;background:conic-gradient(from 220deg,transparent,#60efff33,transparent,#00ff8722,transparent);animation:spin 8s linear infinite}.stage>*{position:relative}@keyframes spin{to{transform:rotate(360deg)}}.badgegrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:26px}.badge{border:1px solid #2d5d76;background:#0a1d2b;border-radius:18px;padding:16px}.badge strong{font-size:1.8rem;display:block;color:var(--green)}.badge span{color:var(--muted);font-size:.8rem;text-transform:uppercase;letter-spacing:.08em}
+section{padding:30px 0}.sectionhead{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin-bottom:14px}.sectionhead h2{font-size:clamp(1.7rem,4vw,2.8rem);margin:.2rem 0}.card{border:1px solid var(--line);background:linear-gradient(180deg,rgba(16,40,58,.92),rgba(10,27,41,.96));border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}.path{display:grid;gap:12px}.step{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start;padding:16px;border:1px solid #28536a;border-radius:20px;background:#0a1d2b}.num{width:42px;height:42px;border-radius:14px;background:var(--hb);color:#06111b;display:grid;place-items:center;font-weight:1000}.step:nth-child(2) .num{background:var(--green)}.step:nth-child(3) .num{background:var(--yellow)}.step:nth-child(4) .num{background:var(--cyan)}.step:nth-child(5) .num{background:var(--pink);color:white}.step h3{margin-bottom:4px}.step p,.card p,.step li{color:var(--muted);line-height:1.55}.challenge{display:none}.challenge.active{display:block}.choice{display:block;width:100%;text-align:left;margin:10px 0;border:1px solid #2d5d76;border-radius:16px;background:#0a1d2b;color:var(--ink);padding:14px;cursor:pointer}.choice.good{border-color:#1e8557;background:#0d3023}.choice.bad{border-color:#7b3540;background:#2a1118}.feedback{min-height:48px;color:#d8e8f0;line-height:1.45;margin-top:10px}.progress{height:12px;background:#06131e;border:1px solid #22495f;border-radius:999px;overflow:hidden}.bar{height:100%;width:0;background:linear-gradient(90deg,var(--hb),var(--green));transition:.3s}.checklist{display:grid;gap:10px}.check{display:flex;gap:12px;align-items:flex-start;border:1px solid #244d64;background:#081b29;border-radius:16px;padding:13px}.check input{width:22px;height:22px;accent-color:#00c878}.result{font-size:1.2rem;font-weight:900}.question{display:none}.question.active{display:block}.qtext{font-size:1.35rem;font-weight:900;line-height:1.25}.promptbox{border-left:4px solid var(--green);padding:12px 14px;background:#081b29;border-radius:0 16px 16px 0;color:#cfe0e9}.textarea{width:100%;min-height:130px;border:1px solid #2d5d76;border-radius:18px;background:#071622;color:white;padding:14px;resize:vertical}.mini{font-size:.84rem;color:var(--muted)}.flow{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}.flow button{border:1px solid #2d5d76;border-radius:18px;background:#0a1d2b;color:white;padding:14px 8px;min-height:88px;cursor:pointer;font-weight:900}.flow button.on{border-color:var(--green);box-shadow:0 0 0 2px rgba(0,255,135,.18) inset}.source{color:#718897;font-size:.75rem;margin-top:18px}.footer{border-top:1px solid var(--line);padding:30px 0 50px;color:var(--muted)}.hide{display:none!important}
+@media(max-width:860px){.hero,.grid2,.grid3{grid-template-columns:1fr}.flow{grid-template-columns:1fr 1fr}.nav{align-items:flex-start}.navlinks{display:none}.stage{min-height:auto}.badgegrid{grid-template-columns:1fr 1fr}.wrap{padding:14px}.card{padding:18px}}
+@media(max-width:480px){.flow{grid-template-columns:1fr}.badgegrid{grid-template-columns:1fr}.actions .btn{width:100%;text-align:center}.brand small{display:none}.hero{padding-top:34px}}
+@media print{.top,.actions,.btn{display:none}.hero,.grid2,.grid3{display:block}.card,.stage,.step{box-shadow:none;break-inside:avoid}body{background:white;color:black}.lead,.card p,.step p,.mini{color:#333}}
+</style>
+</head>
+<body>
+<header class="top">
+  <nav class="nav">
+    <div class="brand"><div class="mark"><span>HB</span></div><div><b>Hood Boss Technician Path</b><small>Team Lead prep - technician-only</small></div></div>
+    <div class="navlinks"><a href="#briefing">Briefing</a><a href="#practice">Practice</a><a href="#check">Self-check</a><a href="#workflow">Workflow</a></div>
+  </nav>
+</header>
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <div class="kicker">Technician-only briefing</div>
+      <h1>Ready to lead the crew?</h1>
+      <p class="lead">This is the watchable version of the Team Lead interview packet. No manager scoring, no HR backend, no candidate ranking - just the technician path: understand the role, practice the interview, check your readiness, and walk in sharper.</p>
+      <div class="actions"><a class="btn primary" href="#briefing">Start the briefing</a><a class="btn green" href="#practice">Practice interview</a><button class="btn" id="exportBtn">Export my notes</button></div>
+    </div>
+    <div class="stage">
+      <div class="kicker">The job in one sentence</div>
+      <h2>You become responsible for the crew, the communication, the documentation, the safety, and the final quality.</h2>
+      <p class="lead">Cleaning is part of it. Leadership is the actual test.</p>
+      <div class="badgegrid"><div class="badge"><strong>4</strong><span>interview areas</span></div><div class="badge"><strong>6</strong><span>work-order states</span></div><div class="badge"><strong>10</strong><span>self-check signals</span></div><div class="badge"><strong>1</strong><span>final standard</span></div></div>
+    </div>
+  </section>
+
+  <section id="briefing">
+    <div class="sectionhead"><div><div class="kicker">Fast briefing</div><h2>What you are really interviewing for</h2></div></div>
+    <div class="path">
+      <div class="step"><div class="num">1</div><div><h3>Ownership, not just experience</h3><p>A Team Lead does the work, but also owns the outcome. You need to sound like the person who checks the job before anyone has to ask.</p></div></div>
+      <div class="step"><div class="num">2</div><div><h3>Communication under pressure</h3><p>Control Tower, office updates, start-time problems, access issues, missing photos, deficiencies - if communication breaks, the job breaks.</p></div></div>
+      <div class="step"><div class="num">3</div><div><h3>Documentation that protects the job</h3><p>Before/after photos, clear notes, timestamps, deficiencies, and closeout details prove what happened and what was fixed.</p></div></div>
+      <div class="step"><div class="num">4</div><div><h3>Safety and quality standards</h3><p>If something is unsafe, you correct it. If it cannot be corrected, you stop the operation and communicate upward.</p></div></div>
+      <div class="step"><div class="num">5</div><div><h3>Coaching the crew</h3><p>A Team Lead sets the pace, teaches, keeps people moving, and helps less-experienced technicians get better.</p></div></div>
+    </div>
+  </section>
+
+  <section id="practice">
+    <div class="sectionhead"><div><div class="kicker">Practice mode</div><h2>Answer like a Team Lead</h2></div><button class="btn" id="nextQ">Next question</button></div>
+    <div class="grid2">
+      <div class="card">
+        <div class="progress"><div class="bar" id="qbar"></div></div>
+        <div id="questions"></div>
+      </div>
+      <div class="card">
+        <h3>STAR + Ownership</h3>
+        <p class="promptbox"><b>Situation:</b> What was happening?<br><b>Task:</b> What were you responsible for?<br><b>Action:</b> What did you actually do?<br><b>Result:</b> What happened?<br><b>Ownership:</b> What would you do as the Team Lead next time?</p>
+        <p class="mini">Your notes save only in this browser. They are for your prep, not manager review.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="check">
+    <div class="sectionhead"><div><div class="kicker">Self-check</div><h2>Am I ready?</h2></div><div class="result" id="scoreText">0/10</div></div>
+    <div class="grid2">
+      <div class="card checklist" id="checks"></div>
+      <div class="card">
+        <h3 id="readinessTitle">Start checking the boxes.</h3>
+        <p id="readinessText" class="lead">This is not a manager decision tool. It is a mirror. Use it to know what to strengthen before the interview.</p>
+        <div class="progress"><div class="bar" id="checkBar"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="workflow">
+    <div class="sectionhead"><div><div class="kicker">Job flow</div><h2>Know the work-order states</h2></div></div>
+    <div class="card">
+      <div class="flow" id="flow"></div>
+      <p class="lead" id="flowText" style="margin-top:18px">Tap a state. Know what it means. Strong Team Leads keep the office from guessing.</p>
+    </div>
+  </section>
+
+  <section id="scenario">
+    <div class="sectionhead"><div><div class="kicker">Scenario trainer</div><h2>What would a Team Lead do?</h2></div><button class="btn" id="nextScenario">Next scenario</button></div>
+    <div class="card"><div id="scenarioBox"></div><div class="feedback" id="feedback"></div></div>
+  </section>
+
+  <section>
+    <div class="card">
+      <div class="kicker">Final message</div>
+      <h2>Walk in like somebody who already protects the job.</h2>
+      <p class="lead">A strong Team Lead candidate does not just say “I can clean.” They say: “I can lead the crew, communicate early, document clearly, correct safety issues, inspect the work, and own the final result.”</p>
+      <p class="source">Built from the Hood Boss Team Lead job description, interview questions, workflow sheet, and cleaning instruction packet. This technician-only version intentionally excludes manager scoring, candidate ranking, audit logs, and employment-decision tools.</p>
+    </div>
+  </section>
+</main>
+<footer class="wrap footer">Hood Boss Technician Path - Team Lead prep - NEXUS signature underneath, Hood Boss professional on top.</footer>
+<script>
+const questions=[
+ ['Experience','Thinking about the technicians and Team Leads you have worked with, what did you learn from those who were good at the job?'],
+ ['Experience','How could Hood Boss improve the Team Lead role, and what would you focus on if promoted?'],
+ ['Experience','What previous leadership, coaching, sports, or management experience do you have?'],
+ ['Performance','Tell me about a time you ran into trouble or significant difficulty at a customer location.'],
+ ['Communication','What value do you see in the Control Tower setup?'],
+ ['Communication','How often do you contact Control Tower, and what kinds of updates matter most?'],
+ ['Communication','Are you more comfortable with spoken or written communication? How do you handle both?'],
+ ['General','In what ways could the company do a better job managing technicians?'],
+ ['General','What areas personally or professionally could you use the most support in?']
+];
+const checks=['90+ days Kitchen Exhaust Cleaning experience','30+ days guiding or helping less-experienced techs','Good attendance record','Follows company procedures consistently','Documents jobs, notes, photos, and deficiencies clearly','Maintains equipment and reports needs','Keeps vehicle clean and organized','Communicates well with office, customer, and crew','Makes good decisions at customer sites','Coaches and encourages team members'];
+const flows=[['On the Way','Traveling to the site. Be ready and communicate if timing changes.'],['On Site','Arrived and preparing to begin.'],['Waiting on Access','You are there but cannot begin. Office needs to know why.'],['Check In','Access is obtained and the job starts.'],['Check Out','Work is complete and closeout documentation matters.'],['Needs SM Review','Escalate for Service Manager review instead of guessing.']];
+const scenarios=[
+ {q:'You arrive and nobody can let the crew in. What is the Team Lead move?',a:['Wait quietly and hope it works out.','Notify the office / Control Tower, document the access issue, and keep the crew ready.','Leave because access is not your problem.'],good:1,why:'Correct. Access problems are communication problems before they become schedule problems.'},
+ {q:'A technician skips a visible area because it is annoying to reach. What do you do?',a:['Correct it and make sure the area is completed or documented if truly inaccessible.','Ignore it if the customer cannot see it.','Blame the new guy later.'],good:0,why:'Correct. Team Lead means final quality ownership before leaving the site.'},
+ {q:'You see an unsafe setup that cannot be fixed immediately. What happens next?',a:['Keep working carefully.','Stop the unsafe operation and communicate upward.','Only mention it at the end of the night.'],good:1,why:'Correct. The packet makes safety correction and escalation part of the role.'},
+ {q:'The job is finished but photos and notes are weak. What is the Team Lead move?',a:['Submit anyway because the cleaning was done.','Make the documentation complete before closeout.','Ask the office to figure it out from context.'],good:1,why:'Correct. Documentation protects the job and proves the work.'}
+];
+let qIndex=Number(localStorage.techPathQ||0), scenarioIndex=0;
+function saveNote(i,v){localStorage['techPathNote'+i]=v}
+function renderQuestions(){const box=document.getElementById('questions');box.innerHTML=questions.map((q,i)=>`<div class="question ${i===qIndex?'active':''}"><p class="mini">${q[0].toUpperCase()}</p><p class="qtext">${q[1]}</p><textarea class="textarea" placeholder="Practice your answer here..." oninput="saveNote(${i},this.value)">${localStorage['techPathNote'+i]||''}</textarea></div>`).join('');document.getElementById('qbar').style.width=((qIndex+1)/questions.length*100)+'%'}
+document.getElementById('nextQ').onclick=()=>{qIndex=(qIndex+1)%questions.length;localStorage.techPathQ=qIndex;renderQuestions()};
+function renderChecks(){const box=document.getElementById('checks');box.innerHTML=checks.map((c,i)=>`<label class="check"><input type="checkbox" ${localStorage['techPathCheck'+i]==='1'?'checked':''} onchange="localStorage['techPathCheck'+${i}]=this.checked?'1':'0';renderChecks()"><span>${c}</span></label>`).join('');const done=checks.filter((_,i)=>localStorage['techPathCheck'+i]==='1').length;document.getElementById('scoreText').textContent=done+'/10';document.getElementById('checkBar').style.width=(done/checks.length*100)+'%';let title='Build the evidence.';let text='This is not about pretending you are ready. It is about knowing exactly what to tighten up.';if(done>=8){title='Strong path signal.';text='You have most of the public role signals covered. Practice specific examples before the interview.'}else if(done>=5){title='Close, but sharpen it.';text='You have a foundation. Bring honest examples and name the areas you are actively improving.'}document.getElementById('readinessTitle').textContent=title;document.getElementById('readinessText').textContent=text}
+function renderFlow(){document.getElementById('flow').innerHTML=flows.map((f,i)=>`<button onclick="showFlow(${i})">${f[0]}</button>`).join('')}
+function showFlow(i){[...document.querySelectorAll('#flow button')].forEach((b,idx)=>b.classList.toggle('on',idx===i));document.getElementById('flowText').textContent=flows[i][1]}
+function renderScenario(){const s=scenarios[scenarioIndex];document.getElementById('scenarioBox').innerHTML=`<h3>${s.q}</h3>`+s.a.map((x,i)=>`<button class="choice" onclick="answerScenario(${i})">${x}</button>`).join('');document.getElementById('feedback').textContent=''}
+function answerScenario(i){const s=scenarios[scenarioIndex];document.querySelectorAll('.choice')[i].classList.add(i===s.good?'good':'bad');document.getElementById('feedback').textContent=i===s.good?s.why:'Not the best move. Think like the person who owns communication, safety, documentation, and final quality.'}
+document.getElementById('nextScenario').onclick=()=>{scenarioIndex=(scenarioIndex+1)%scenarios.length;renderScenario()};
+document.getElementById('exportBtn').onclick=()=>{let out='Hood Boss Technician Path - My Prep Notes\n\n';questions.forEach((q,i)=>out+=`${q[0]} - ${q[1]}\n${localStorage['techPathNote'+i]||''}\n\n`);const blob=new Blob([out],{type:'text/plain'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='hood-boss-tech-lead-prep-notes.txt';a.click();URL.revokeObjectURL(a.href)};
+renderQuestions();renderChecks();renderFlow();showFlow(0);renderScenario();
+</script>
+</body>
+</html>
